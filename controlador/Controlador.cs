@@ -22,6 +22,7 @@ namespace SpaceInvaders.controlador
             this.vista = vista;
 
 
+
             
         }
 
