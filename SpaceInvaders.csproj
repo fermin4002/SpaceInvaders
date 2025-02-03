@@ -52,7 +52,6 @@
     <Compile Include="modelo\DisparoEnemigo.cs" />
     <Compile Include="modelo\Enemigo.cs" />
     <Compile Include="controlador\GestorComponentes.cs" />
-    <Compile Include="modelo\Jugador.cs" />
     <Compile Include="modelo\Personaje.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
