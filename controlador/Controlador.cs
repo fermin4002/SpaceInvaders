@@ -26,7 +26,8 @@ public class Controlador {
         jugadores = new List<(string, int)>();
         this.vista = vista;
         vista.KeyPreview = true;
-        player=new SoundPlayer(@"..\\..\\Resources\\transportar.wav");
+        
+        player =new SoundPlayer(@"..\\..\\Resources\\transportar.wav");
         tiro = new SoundPlayer(@"..\\..\\Resources\\laser.wav");
 
 

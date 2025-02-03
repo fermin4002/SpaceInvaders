@@ -151,15 +151,6 @@ namespace SpaceInvaders.Properties {
         }
         
         /// <summary>
-        ///   Busca un recurso adaptado de tipo System.IO.UnmanagedMemoryStream similar a System.IO.MemoryStream.
-        /// </summary>
-        internal static System.IO.UnmanagedMemoryStream explosion {
-            get {
-                return ResourceManager.GetStream("explosion", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap gameOver1__1_ {
@@ -190,39 +181,12 @@ namespace SpaceInvaders.Properties {
         }
         
         /// <summary>
-        ///   Busca un recurso adaptado de tipo System.IO.UnmanagedMemoryStream similar a System.IO.MemoryStream.
-        /// </summary>
-        internal static System.IO.UnmanagedMemoryStream laser {
-            get {
-                return ResourceManager.GetStream("laser", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.IO.UnmanagedMemoryStream similar a System.IO.MemoryStream.
-        /// </summary>
-        internal static System.IO.UnmanagedMemoryStream laserEnemigo {
-            get {
-                return ResourceManager.GetStream("laserEnemigo", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap Ligher {
             get {
                 object obj = ResourceManager.GetObject("Ligher", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.IO.UnmanagedMemoryStream similar a System.IO.MemoryStream.
-        /// </summary>
-        internal static System.IO.UnmanagedMemoryStream muerteEnemiga {
-            get {
-                return ResourceManager.GetStream("muerteEnemiga", resourceCulture);
             }
         }
         
@@ -423,15 +387,6 @@ namespace SpaceInvaders.Properties {
             get {
                 object obj = ResourceManager.GetObject("titulo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.IO.UnmanagedMemoryStream similar a System.IO.MemoryStream.
-        /// </summary>
-        internal static System.IO.UnmanagedMemoryStream transportar {
-            get {
-                return ResourceManager.GetStream("transportar", resourceCulture);
             }
         }
     }
