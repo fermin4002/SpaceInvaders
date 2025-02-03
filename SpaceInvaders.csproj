@@ -198,6 +198,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\explosion.wav" />
+    <Content Include="Resources\invader.ico" />
     <Content Include="Resources\laser.wav" />
     <Content Include="Resources\laserEnemigo.wav" />
     <Content Include="Resources\muerteEnemiga.wav" />
