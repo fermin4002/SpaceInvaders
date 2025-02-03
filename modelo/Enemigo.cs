@@ -37,7 +37,7 @@ public class Enemigo {
         enemigo.Left += direccion;
 
         if (enemigo.Left < 14 || enemigo.Left > 1036) {
-            direccion = direccion * -1;
+            direccion *= -1;
 
         }
         return direccion;
@@ -63,7 +63,7 @@ public class Enemigo {
     }
 
     public void generarDisparo(int velocidad,int limite) {
-        int num = 0;
+        int num;
         Random rnd = new Random();
         num = rnd.Next(1, 1001/*1001*/);
         if (num<=probabilidad && vista.disparosEnemigos.Count<limite){

@@ -48,14 +48,14 @@ public class Controlador {
 
     public void partida() {
         cargarInfo();
-        crearEnemigos(30, 10);
+        crearEnemigos(30);
         crearDefensas();
          
         this.gestor = new GestorComponentes(vista, this);
         vista.personaje = new Personaje(vista, 10);
     }
 
-    public void crearEnemigos(int probabilidad, int paso) {
+    public void crearEnemigos(int probabilidad) {
         int valX = 255;
         int valY = 90;
         for (int y = 0; y < 3 /*4*/; y++) {

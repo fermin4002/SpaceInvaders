@@ -397,7 +397,7 @@ public class GestorComponentes {
         puntos += 10;
         limite += 5;
 
-        controlador.crearEnemigos(probabilidadDisparo,direccionGlobal);
+        controlador.crearEnemigos(probabilidadDisparo);
         vista.personaje.setPaso(direccionGlobal);
         controlador.setVelocidadDisparo(velocidadDisparo);
         controlador.crearDefensas();
