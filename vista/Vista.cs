@@ -3,12 +3,14 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Text;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-using SpaceInvaders.controlador;
+
 
 namespace SpaceInvaders.vista
 {
@@ -18,23 +20,14 @@ namespace SpaceInvaders.vista
         public Vista()
         {
             InitializeComponent();
-            
+           // PrivateFontCollection pfc = new PrivateFontCollection();
+            //pfc.AddFontFile(Path.Combine(Application.StartupPath, "Resources", "arcade.TTF"));
+            //font = new Font(pfc.Families[0], 36, FontStyle.Regular);
             controlador = new Controlador(this);
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
+        
     }
+
+
 }

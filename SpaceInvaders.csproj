@@ -47,7 +47,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="controlador\Controlador.cs" />
-    <Compile Include="modelo\Usuario.cs" />
+    <Compile Include="modelo\Defensa.cs" />
+    <Compile Include="modelo\Disparo.cs" />
+    <Compile Include="modelo\DisparoEnemigo.cs" />
+    <Compile Include="modelo\Enemigo.cs" />
+    <Compile Include="controlador\GestorComponentes.cs" />
+    <Compile Include="modelo\Jugador.cs" />
+    <Compile Include="modelo\Personaje.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="vista\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="vista\Vista.cs">
@@ -58,13 +69,9 @@
     </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="vista\Vista.resx">
       <DependentUpon>Vista.cs</DependentUpon>
     </EmbeddedResource>
@@ -77,12 +84,118 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="Resources\arcade.TTF" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="resources\" />
+    <None Include="Resources\play button2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\play button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\play button1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nave1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\915704-space-invaders-windows-3-x-screenshot-title-screen.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enem1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enem2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enem3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ligher.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nave2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nave2bg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nave3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\piedra1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\piedra2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\piedra3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tiro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tiroEnemigo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnRanking.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\play button3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnRanking %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salir %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\titulo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\space.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gameOver1 %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sas %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salir %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inicio.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inicio1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enem21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nave2bg1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nave2bg2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nave31.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tiro1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tiroEnemigo1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
