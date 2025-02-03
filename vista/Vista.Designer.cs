@@ -38,6 +38,13 @@ namespace SpaceInvaders.vista
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Vista));
             this.panelJuego = new System.Windows.Forms.Panel();
             this.panelMenu = new System.Windows.Forms.Panel();
+            this.pictureBox12 = new System.Windows.Forms.PictureBox();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -66,14 +73,14 @@ namespace SpaceInvaders.vista
             this.lblPuntosGameOver = new System.Windows.Forms.Label();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.pictureBox11 = new System.Windows.Forms.PictureBox();
-            this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.panelMenu.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -85,13 +92,6 @@ namespace SpaceInvaders.vista
             this.panelRanking.SuspendLayout();
             this.panelGameOver.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             this.SuspendLayout();
             // 
             // panelJuego
@@ -121,6 +121,77 @@ namespace SpaceInvaders.vista
             this.panelMenu.Name = "panelMenu";
             this.panelMenu.Size = new System.Drawing.Size(1126, 768);
             this.panelMenu.TabIndex = 1;
+            // 
+            // pictureBox12
+            // 
+            this.pictureBox12.BackgroundImage = global::SpaceInvaders.Properties.Resources.back;
+            this.pictureBox12.Image = global::SpaceInvaders.Properties.Resources.tiroEnemigo1;
+            this.pictureBox12.Location = new System.Drawing.Point(955, 272);
+            this.pictureBox12.Name = "pictureBox12";
+            this.pictureBox12.Size = new System.Drawing.Size(20, 70);
+            this.pictureBox12.TabIndex = 13;
+            this.pictureBox12.TabStop = false;
+            // 
+            // pictureBox11
+            // 
+            this.pictureBox11.BackgroundImage = global::SpaceInvaders.Properties.Resources.back;
+            this.pictureBox11.Image = global::SpaceInvaders.Properties.Resources.tiro1;
+            this.pictureBox11.Location = new System.Drawing.Point(955, 578);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(20, 70);
+            this.pictureBox11.TabIndex = 12;
+            this.pictureBox11.TabStop = false;
+            // 
+            // pictureBox10
+            // 
+            this.pictureBox10.BackgroundImage = global::SpaceInvaders.Properties.Resources.back;
+            this.pictureBox10.Image = global::SpaceInvaders.Properties.Resources.nave31;
+            this.pictureBox10.InitialImage = null;
+            this.pictureBox10.Location = new System.Drawing.Point(915, 657);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(100, 100);
+            this.pictureBox10.TabIndex = 11;
+            this.pictureBox10.TabStop = false;
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.BackgroundImage = global::SpaceInvaders.Properties.Resources.back;
+            this.pictureBox9.Image = global::SpaceInvaders.Properties.Resources.enem21;
+            this.pictureBox9.Location = new System.Drawing.Point(767, 330);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(100, 100);
+            this.pictureBox9.TabIndex = 10;
+            this.pictureBox9.TabStop = false;
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.BackgroundImage = global::SpaceInvaders.Properties.Resources.back;
+            this.pictureBox8.Image = global::SpaceInvaders.Properties.Resources.enem21;
+            this.pictureBox8.Location = new System.Drawing.Point(249, 317);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(100, 100);
+            this.pictureBox8.TabIndex = 9;
+            this.pictureBox8.TabStop = false;
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.BackgroundImage = global::SpaceInvaders.Properties.Resources.back;
+            this.pictureBox7.Image = global::SpaceInvaders.Properties.Resources.enem21;
+            this.pictureBox7.Location = new System.Drawing.Point(915, 166);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(100, 100);
+            this.pictureBox7.TabIndex = 8;
+            this.pictureBox7.TabStop = false;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.BackgroundImage = global::SpaceInvaders.Properties.Resources.back;
+            this.pictureBox6.Image = global::SpaceInvaders.Properties.Resources.enem21;
+            this.pictureBox6.Location = new System.Drawing.Point(1012, 307);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(100, 100);
+            this.pictureBox6.TabIndex = 7;
+            this.pictureBox6.TabStop = false;
             // 
             // pictureBox5
             // 
@@ -205,7 +276,7 @@ namespace SpaceInvaders.vista
             // lblPuntos
             // 
             this.lblPuntos.AutoSize = true;
-            this.lblPuntos.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPuntos.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPuntos.ForeColor = System.Drawing.SystemColors.Control;
             this.lblPuntos.Location = new System.Drawing.Point(400, 33);
             this.lblPuntos.MinimumSize = new System.Drawing.Size(300, 0);
@@ -218,11 +289,11 @@ namespace SpaceInvaders.vista
             // lblVidas
             // 
             this.lblVidas.AutoSize = true;
-            this.lblVidas.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblVidas.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblVidas.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.lblVidas.Location = new System.Drawing.Point(90, 32);
             this.lblVidas.Name = "lblVidas";
-            this.lblVidas.Size = new System.Drawing.Size(184, 55);
+            this.lblVidas.Size = new System.Drawing.Size(191, 55);
             this.lblVidas.TabIndex = 1;
             this.lblVidas.Text = "Vidas:3";
             // 
@@ -393,77 +464,6 @@ namespace SpaceInvaders.vista
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
             // 
-            // pictureBox6
-            // 
-            this.pictureBox6.BackgroundImage = global::SpaceInvaders.Properties.Resources.back;
-            this.pictureBox6.Image = global::SpaceInvaders.Properties.Resources.enem21;
-            this.pictureBox6.Location = new System.Drawing.Point(1012, 307);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(100, 100);
-            this.pictureBox6.TabIndex = 7;
-            this.pictureBox6.TabStop = false;
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.BackgroundImage = global::SpaceInvaders.Properties.Resources.back;
-            this.pictureBox7.Image = global::SpaceInvaders.Properties.Resources.enem21;
-            this.pictureBox7.Location = new System.Drawing.Point(915, 166);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(100, 100);
-            this.pictureBox7.TabIndex = 8;
-            this.pictureBox7.TabStop = false;
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.BackgroundImage = global::SpaceInvaders.Properties.Resources.back;
-            this.pictureBox8.Image = global::SpaceInvaders.Properties.Resources.enem21;
-            this.pictureBox8.Location = new System.Drawing.Point(249, 317);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(100, 100);
-            this.pictureBox8.TabIndex = 9;
-            this.pictureBox8.TabStop = false;
-            // 
-            // pictureBox9
-            // 
-            this.pictureBox9.BackgroundImage = global::SpaceInvaders.Properties.Resources.back;
-            this.pictureBox9.Image = global::SpaceInvaders.Properties.Resources.enem21;
-            this.pictureBox9.Location = new System.Drawing.Point(767, 330);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(100, 100);
-            this.pictureBox9.TabIndex = 10;
-            this.pictureBox9.TabStop = false;
-            // 
-            // pictureBox10
-            // 
-            this.pictureBox10.BackgroundImage = global::SpaceInvaders.Properties.Resources.back;
-            this.pictureBox10.Image = global::SpaceInvaders.Properties.Resources.nave31;
-            this.pictureBox10.InitialImage = null;
-            this.pictureBox10.Location = new System.Drawing.Point(915, 657);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(100, 100);
-            this.pictureBox10.TabIndex = 11;
-            this.pictureBox10.TabStop = false;
-            // 
-            // pictureBox11
-            // 
-            this.pictureBox11.BackgroundImage = global::SpaceInvaders.Properties.Resources.back;
-            this.pictureBox11.Image = global::SpaceInvaders.Properties.Resources.tiro1;
-            this.pictureBox11.Location = new System.Drawing.Point(955, 578);
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(20, 70);
-            this.pictureBox11.TabIndex = 12;
-            this.pictureBox11.TabStop = false;
-            // 
-            // pictureBox12
-            // 
-            this.pictureBox12.BackgroundImage = global::SpaceInvaders.Properties.Resources.back;
-            this.pictureBox12.Image = global::SpaceInvaders.Properties.Resources.tiroEnemigo1;
-            this.pictureBox12.Location = new System.Drawing.Point(955, 272);
-            this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(20, 70);
-            this.pictureBox12.TabIndex = 13;
-            this.pictureBox12.TabStop = false;
-            // 
             // Vista
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -472,9 +472,9 @@ namespace SpaceInvaders.vista
             this.BackgroundImage = global::SpaceInvaders.Properties.Resources.back;
             this.ClientSize = new System.Drawing.Size(1146, 788);
             this.Controls.Add(this.panelMenu);
+            this.Controls.Add(this.panelVidasPunto);
             this.Controls.Add(this.panelGameOver);
             this.Controls.Add(this.panelRanking);
-            this.Controls.Add(this.panelVidasPunto);
             this.Controls.Add(this.panelJuego);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -483,6 +483,13 @@ namespace SpaceInvaders.vista
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Space Invader";
             this.panelMenu.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -497,13 +504,6 @@ namespace SpaceInvaders.vista
             this.panelGameOver.ResumeLayout(false);
             this.panelGameOver.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -516,7 +516,6 @@ namespace SpaceInvaders.vista
         public List<Defensa> defensas = new List<Defensa>();
         public Personaje personaje;
         //
-        public Font font;
         public System.Windows.Forms.Panel panelJuego;
         public System.Windows.Forms.Panel panelMenu;
         public System.Windows.Forms.PictureBox fotoInicio;

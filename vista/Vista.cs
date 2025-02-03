@@ -16,13 +16,12 @@ namespace SpaceInvaders.vista
 {
     public partial class Vista : Form
     {
+        
         private Controlador controlador;
         public Vista()
         {
             InitializeComponent();
-           // PrivateFontCollection pfc = new PrivateFontCollection();
-            //pfc.AddFontFile(Path.Combine(Application.StartupPath, "Resources", "arcade.TTF"));
-            //font = new Font(pfc.Families[0], 36, FontStyle.Regular);
+           
             controlador = new Controlador(this);
         }
 

@@ -49,10 +49,7 @@ public class Controlador {
         cargarInfo();
         crearEnemigos(30, 10);
         crearDefensas();
-        /* PrivateFontCollection pfc = new PrivateFontCollection();
-         pfc.AddFontFile(Path.Combine(Application.StartupPath, "Resources", "arcade.TTF"));
-         vista.lblVidas.Font = new Font(pfc.Families[0], 36, FontStyle.Regular);
-         vista.lblPuntos.Font = new Font(pfc.Families[0], 36, FontStyle.Regular);*/
+         
         this.gestor = new GestorComponentes(vista, this);
         vista.personaje = new Personaje(vista, 10);
     }
@@ -100,22 +97,7 @@ public class Controlador {
                 this.vista.disparos.Add(tiro);
             }
             break;
-            case Keys.Escape:
-            Console.WriteLine("Accion Comodin");
-            //gestor.pararTimers();
-            //menu(); 
-            // gameOver();
-            //string[] row1 = { "1", "Carlos", "30" };
-            // string[] row2 = { "2", "Ana", "25" };
-            //ListViewItem item1 = new ListViewItem(row1);
-           // vista.rankingPuntos.Items.Add(item1);
-            //vista.rankingPuntos.Items.Add(new ListViewItem(row1));
-            break;
-
-            default:
-            Console.WriteLine("Otra tecla");
-
-            break;
+          
         }
 
     }
@@ -212,9 +194,7 @@ public class Controlador {
 
         vista.panelGameOver.Visible = false;
         vista.panelGameOver.Enabled = false;
-        /*PrivateFontCollection pfc = new PrivateFontCollection();
-        pfc.AddFontFile(Path.Combine(Application.StartupPath, "Resources", "arcade.TTF"));
-        vista.lblRanking.Font = new Font(pfc.Families[0], 36, FontStyle.Regular); */
+        
     }
 
 

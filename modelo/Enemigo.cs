@@ -33,7 +33,7 @@ public class Enemigo {
 
         
     }
-    public int movimientoLateral(int direccion ) {//hay que cambiar esto da error saltan al final cuano llegan al borde derecho;
+    public int movimientoLateral(int direccion ) {
         enemigo.Left += direccion;
 
         if (enemigo.Left < 14 || enemigo.Left > 1036) {
@@ -58,7 +58,7 @@ public class Enemigo {
         enemigo.Dispose();
         vista.lblPuntos.Text = (int.Parse(vista.lblPuntos.Text) + puntos).ToString();
 
-        //vista.lblPuntos.Font = vista.font; 
+       
 
     }
 
