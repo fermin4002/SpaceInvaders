@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -11,11 +12,13 @@ public class Personaje {
         private PictureBox personaje;
         private int vida;
         private int paso;
+        private SoundPlayer player;
     public Personaje(Vista vista, int paso) {
         this.paso = paso;
         this.vista = vista;
         this.personaje = new PictureBox();
         this.vida = 3;
+        this.player = new SoundPlayer(@"..\\..\\Resources\\explosion.wav");
         personaje.Location = new System.Drawing.Point(500, 607);
         personaje.Width = 50;
         personaje.Height = 50;
@@ -43,6 +46,7 @@ public class Personaje {
     public Boolean destruir(int i) {
         Boolean salida = false;
         vida--;
+        player.Play();
         if (vida == 0) {
             salida = true;
         } else {

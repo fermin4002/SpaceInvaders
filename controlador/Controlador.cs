@@ -9,6 +9,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using SpaceInvaders.vista;
+using System.Media;
+
 
 
 
@@ -17,12 +19,15 @@ public class Controlador {
     private Vista vista;
     private int velocicadDisparo;
     private GestorComponentes gestor;
+    private SoundPlayer player,tiro;
 
 
     public Controlador(Vista vista) {
         jugadores = new List<(string, int)>();
         this.vista = vista;
         vista.KeyPreview = true;
+        player=new SoundPlayer(@"..\\..\\Resources\\transportar.wav");
+        tiro = new SoundPlayer(@"..\\..\\Resources\\laser.wav");
 
 
         vista.KeyDown += keyDown;
@@ -91,6 +96,7 @@ public class Controlador {
             Console.WriteLine("Disparo");
             if (vista.disparos.Count < 1) {
                 Disparo tiro = new Disparo(this.vista, vista.personaje.getPersonaje().Location.X + 19, vista.personaje.getPersonaje().Location.Y - 24, velocicadDisparo);
+                this.tiro.Play();
                 this.vista.disparos.Add(tiro);
             }
             break;
@@ -139,6 +145,7 @@ public class Controlador {
                     vista.txtNombre.Text = "";
 
                 }
+                player.Play();
                 menu();
                 break;
                 default:
@@ -150,6 +157,7 @@ public class Controlador {
     }
 
     public void juego() {
+        player.Play();
         vista.KeyPreview = true;//Capturar las teclas
         vista.panelJuego.Visible = true;
         vista.panelJuego.Enabled = true;
@@ -168,6 +176,7 @@ public class Controlador {
     }
 
     public void menu() {
+        
         vista.KeyPreview = false;
         vista.panelMenu.Visible = true;
         vista.panelMenu.Enabled = true;
@@ -186,6 +195,7 @@ public class Controlador {
     }
 
     public void ranking() {
+        
         vista.KeyPreview = false;
         cargarListView();
         vista.panelRanking.Visible = true;
@@ -253,6 +263,10 @@ public class Controlador {
             i++;
         }
 
+    }
+
+    public SoundPlayer getTiro() {
+        return tiro;
     }
 
 }

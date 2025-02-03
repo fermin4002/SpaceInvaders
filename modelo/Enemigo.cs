@@ -9,12 +9,13 @@ using System.Windows.Forms;
 using System.Drawing.Text;
 using System.IO;
 using System.Drawing;
+using System.Media;
 
 public class Enemigo {
     private Vista vista;
     private PictureBox enemigo;
     private int probabilidad;
-    
+    private SoundPlayer play;
 
     public Enemigo(Vista vista, int posX, int posY,int probabilidad) {
         this.vista = vista;
@@ -22,8 +23,8 @@ public class Enemigo {
         this.probabilidad = probabilidad;   
         this.enemigo = new PictureBox();
         this.vista.panelJuego.Controls.Add(enemigo);
- 
-        
+        play = new SoundPlayer(@"..\\..\\Resources\\laserEnemigo.wav");
+
         enemigo.Location = new System.Drawing.Point(posX, posY);
         enemigo.Width = 50;
         enemigo.Height = 50;
@@ -51,7 +52,9 @@ public class Enemigo {
     }
 
     public void destruir(int puntos) {
-        
+        play.SoundLocation = @"..\\..\\Resources\\muerteEnemiga.wav";
+        play.Load();
+        play.Play();
         enemigo.Dispose();
         vista.lblPuntos.Text = (int.Parse(vista.lblPuntos.Text) + puntos).ToString();
 
@@ -63,9 +66,10 @@ public class Enemigo {
         int num = 0;
         Random rnd = new Random();
         num = rnd.Next(1, 1001/*1001*/);
-        if (num<=probabilidad && vista.disparosEnemigos.Count<limite){ 
-        DisparoEnemigo disparo = new DisparoEnemigo(vista, enemigo.Location.X + 21, enemigo.Location.Y + 50,velocidad);
-        vista.disparosEnemigos.Add(disparo);
+        if (num<=probabilidad && vista.disparosEnemigos.Count<limite){
+            play.Play();    
+            DisparoEnemigo disparo = new DisparoEnemigo(vista, enemigo.Location.X + 21, enemigo.Location.Y + 50,velocidad);
+            vista.disparosEnemigos.Add(disparo);
         }
     }
 

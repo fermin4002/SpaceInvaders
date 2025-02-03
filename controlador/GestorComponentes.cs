@@ -368,10 +368,6 @@ public class GestorComponentes {
         timerColisionDisparoEnemigoPersonaje.Stop();
         timerColisionDisparoEnemigoDefensa.Stop();    
         vista.panelJuego.Controls.Clear();
-        
-
-
-
 
     }
 
