@@ -406,6 +406,7 @@ public class GestorComponentes {
         int vida=vista.personaje.getVida();
         vista.personaje = new Personaje(vista, direccionGlobal);
         vista.personaje.setVida(vida);
+        vista.personaje.getPersonaje().Left = 500;
         vista.lblVidas.Text = "VIDAS:" + vista.personaje.getVida().ToString();
         reanudarTimers();
 
