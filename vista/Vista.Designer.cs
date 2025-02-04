@@ -78,6 +78,7 @@ namespace SpaceInvaders.vista
             // panelMenu
             // 
             this.panelMenu.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.panelMenu.BackgroundImage = global::SpaceInvaders.Properties.Resources.fondo__1_3;
             this.panelMenu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.panelMenu.Controls.Add(this.btnClasificacion);
             this.panelMenu.Controls.Add(this.btnStart);
@@ -85,9 +86,11 @@ namespace SpaceInvaders.vista
             this.panelMenu.Name = "panelMenu";
             this.panelMenu.Size = new System.Drawing.Size(1126, 768);
             this.panelMenu.TabIndex = 1;
+            this.panelMenu.Paint += new System.Windows.Forms.PaintEventHandler(this.panelMenu_Paint);
             // 
             // btnClasificacion
             // 
+            this.btnClasificacion.Image = global::SpaceInvaders.Properties.Resources.btnRanking__1_;
             this.btnClasificacion.Location = new System.Drawing.Point(486, 477);
             this.btnClasificacion.Name = "btnClasificacion";
             this.btnClasificacion.Size = new System.Drawing.Size(200, 200);
@@ -96,6 +99,7 @@ namespace SpaceInvaders.vista
             // 
             // btnStart
             // 
+            this.btnStart.BackgroundImage = global::SpaceInvaders.Properties.Resources.play_button;
             this.btnStart.Location = new System.Drawing.Point(439, 349);
             this.btnStart.Name = "btnStart";
             this.btnStart.Size = new System.Drawing.Size(300, 70);
@@ -138,6 +142,7 @@ namespace SpaceInvaders.vista
             // 
             // iconoPersonaje
             // 
+            this.iconoPersonaje.Image = global::SpaceInvaders.Properties.Resources.nave2bg;
             this.iconoPersonaje.Location = new System.Drawing.Point(14, 17);
             this.iconoPersonaje.Name = "iconoPersonaje";
             this.iconoPersonaje.Size = new System.Drawing.Size(70, 70);
@@ -146,6 +151,7 @@ namespace SpaceInvaders.vista
             // 
             // panelRanking
             // 
+            this.panelRanking.BackgroundImage = global::SpaceInvaders.Properties.Resources.space;
             this.panelRanking.Controls.Add(this.rankingPuntos);
             this.panelRanking.Controls.Add(this.btnSalir);
             this.panelRanking.Controls.Add(this.lblRanking);
@@ -156,6 +162,7 @@ namespace SpaceInvaders.vista
             // 
             // rankingPuntos
             // 
+            this.rankingPuntos.BackgroundImage = global::SpaceInvaders.Properties.Resources.sas__1_;
             this.rankingPuntos.BackgroundImageTiled = true;
             this.rankingPuntos.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader1,
@@ -190,6 +197,7 @@ namespace SpaceInvaders.vista
             // 
             // btnSalir
             // 
+            this.btnSalir.Image = global::SpaceInvaders.Properties.Resources.salir__2_;
             this.btnSalir.Location = new System.Drawing.Point(877, 4);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(70, 70);
@@ -221,6 +229,7 @@ namespace SpaceInvaders.vista
             // 
             // panelGameOver
             // 
+            this.panelGameOver.BackgroundImage = global::SpaceInvaders.Properties.Resources.sas__1_;
             this.panelGameOver.Controls.Add(this.label1);
             this.panelGameOver.Controls.Add(this.btnMenuExit);
             this.panelGameOver.Controls.Add(this.lblPuntosGameOver);
@@ -247,6 +256,7 @@ namespace SpaceInvaders.vista
             // 
             // btnMenuExit
             // 
+            this.btnMenuExit.Image = global::SpaceInvaders.Properties.Resources.inicio1;
             this.btnMenuExit.Location = new System.Drawing.Point(175, 382);
             this.btnMenuExit.Name = "btnMenuExit";
             this.btnMenuExit.Size = new System.Drawing.Size(300, 80);
@@ -282,6 +292,7 @@ namespace SpaceInvaders.vista
             // fotoGameOver
             // 
             this.fotoGameOver.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.fotoGameOver.Image = global::SpaceInvaders.Properties.Resources.gameOver1__1_;
             this.fotoGameOver.Location = new System.Drawing.Point(75, 18);
             this.fotoGameOver.Name = "fotoGameOver";
             this.fotoGameOver.Size = new System.Drawing.Size(500, 209);
@@ -296,9 +307,9 @@ namespace SpaceInvaders.vista
             this.BackgroundImage = global::SpaceInvaders.Properties.Resources.back;
             this.ClientSize = new System.Drawing.Size(1146, 788);
             this.Controls.Add(this.panelMenu);
-            this.Controls.Add(this.panelVidasPunto);
             this.Controls.Add(this.panelRanking);
             this.Controls.Add(this.panelGameOver);
+            this.Controls.Add(this.panelVidasPunto);
             this.Controls.Add(this.panelJuego);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
