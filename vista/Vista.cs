@@ -31,12 +31,7 @@ namespace SpaceInvaders.vista
             controlador.crearJson();
         }
 
-        private void panelMenu_Paint(object sender, PaintEventArgs e) {
-
-        }
-
-        private void pictureBox2_Click(object sender, EventArgs e) {
-                    }
+       
     }
 
 
