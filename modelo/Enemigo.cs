@@ -51,15 +51,9 @@ public class Enemigo {
         return enemigo;
     }
 
-    public void destruir(int puntos) {
-        play.SoundLocation = @"..\\..\\Resources\\muerteEnemiga.wav";
-        play.Load();
-        play.Play();
+    public void destruir(int puntos) {  
         enemigo.Dispose();
-        vista.lblPuntos.Text = (int.Parse(vista.lblPuntos.Text) + puntos).ToString();
-
-       
-
+        vista.lblPuntos.Text = (int.Parse(vista.lblPuntos.Text) + puntos).ToString();   
     }
 
     public void generarDisparo(int velocidad,int limite) {
