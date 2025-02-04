@@ -63,39 +63,9 @@ namespace SpaceInvaders.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _915704_space_invaders_windows_3_x_screenshot_title_screen {
-            get {
-                object obj = ResourceManager.GetObject("915704-space-invaders-windows-3-x-screenshot-title-screen", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap back {
             get {
                 object obj = ResourceManager.GetObject("back", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap back1 {
-            get {
-                object obj = ResourceManager.GetObject("back1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap btnRanking {
-            get {
-                object obj = ResourceManager.GetObject("btnRanking", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -133,9 +103,9 @@ namespace SpaceInvaders.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap enem21 {
+        internal static System.Drawing.Bitmap enem3 {
             get {
-                object obj = ResourceManager.GetObject("enem21", resourceCulture);
+                object obj = ResourceManager.GetObject("enem3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -143,9 +113,9 @@ namespace SpaceInvaders.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap enem3 {
+        internal static System.Drawing.Bitmap fondo__1_3 {
             get {
-                object obj = ResourceManager.GetObject("enem3", resourceCulture);
+                object obj = ResourceManager.GetObject("fondo (1)3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -163,16 +133,6 @@ namespace SpaceInvaders.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap inicio {
-            get {
-                object obj = ResourceManager.GetObject("inicio", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap inicio1 {
             get {
                 object obj = ResourceManager.GetObject("inicio1", resourceCulture);
@@ -183,9 +143,9 @@ namespace SpaceInvaders.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Ligher {
+        internal static System.Drawing.Bitmap invader {
             get {
-                object obj = ResourceManager.GetObject("Ligher", resourceCulture);
+                object obj = ResourceManager.GetObject("invader", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -223,39 +183,9 @@ namespace SpaceInvaders.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap nave2bg1 {
-            get {
-                object obj = ResourceManager.GetObject("nave2bg1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap nave2bg2 {
-            get {
-                object obj = ResourceManager.GetObject("nave2bg2", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap nave3 {
             get {
                 object obj = ResourceManager.GetObject("nave3", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap nave31 {
-            get {
-                object obj = ResourceManager.GetObject("nave31", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -303,16 +233,6 @@ namespace SpaceInvaders.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap salir__1_ {
-            get {
-                object obj = ResourceManager.GetObject("salir (1)", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap salir__2_ {
             get {
                 object obj = ResourceManager.GetObject("salir (2)", resourceCulture);
@@ -353,39 +273,9 @@ namespace SpaceInvaders.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap tiro1 {
-            get {
-                object obj = ResourceManager.GetObject("tiro1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap tiroEnemigo {
             get {
                 object obj = ResourceManager.GetObject("tiroEnemigo", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap tiroEnemigo1 {
-            get {
-                object obj = ResourceManager.GetObject("tiroEnemigo1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap titulo {
-            get {
-                object obj = ResourceManager.GetObject("titulo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

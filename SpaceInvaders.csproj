@@ -202,21 +202,18 @@
   <ItemGroup>
     <Content Include="invader.ico" />
     <Content Include="Resources\explosion.wav" />
+    <None Include="Resources\fondo.png" />
+    <None Include="Resources\fondo1.png" />
+    <None Include="Resources\fondo %281%29.png" />
+    <None Include="Resources\fondo2.png" />
+    <None Include="Resources\fondo %281%291.png" />
+    <None Include="Resources\fondo %281%292.png" />
+    <None Include="Resources\fondo %281%293.png" />
     <Content Include="Resources\invader.ico" />
+    <None Include="Resources\invader.png" />
     <Content Include="Resources\laser.wav" />
     <Content Include="Resources\laserEnemigo.wav" />
     <Content Include="Resources\transportar.wav" />
-  </ItemGroup>
-  <ItemGroup>
-    <COMReference Include="WMPLib">
-      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
-      <VersionMajor>1</VersionMajor>
-      <VersionMinor>0</VersionMinor>
-      <Lcid>0</Lcid>
-      <WrapperTool>tlbimp</WrapperTool>
-      <Isolated>False</Isolated>
-      <EmbedInteropTypes>True</EmbedInteropTypes>
-    </COMReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
