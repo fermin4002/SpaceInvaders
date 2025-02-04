@@ -45,7 +45,7 @@ public class Personaje {
 
     public Boolean destruir(int i) {
         Boolean salida = false;
-        vida--;
+        vida-=i;
         player.Play();
         if (vida == 0) {
             salida = true;
