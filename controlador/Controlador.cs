@@ -1,33 +1,29 @@
 ﻿using System;
-using System.CodeDom;
 using System.Collections.Generic;
-using System.Drawing.Text;
-using System.Drawing;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using SpaceInvaders.vista;
 using System.Media;
+using System.Globalization;
+using System.Text.Json;
 
 
 
 
 public class Controlador {
-    List<(string Nombre, int Puntuacion)> jugadores;
+    List<Partida> partidas;
     private Vista vista;
     private int velocicadDisparo;
     private GestorComponentes gestor;
-    private SoundPlayer player,tiro;
+    private SoundPlayer player, tiro;
 
 
     public Controlador(Vista vista) {
-        jugadores = new List<(string, int)>();
+        partidas = new List<Partida>();
         this.vista = vista;
         vista.KeyPreview = true;
-        
-        player =new SoundPlayer(@"..\\..\\Resources\\transportar.wav");
+
+        player = new SoundPlayer(@"..\\..\\Resources\\transportar.wav");
         tiro = new SoundPlayer(@"..\\..\\Resources\\laser.wav");
 
 
@@ -41,7 +37,7 @@ public class Controlador {
         velocicadDisparo = 10;
 
 
-
+        leerTXT();
         menu();
 
     }
@@ -50,7 +46,7 @@ public class Controlador {
         cargarInfo();
         crearEnemigos(30);
         crearDefensas();
-         
+
         this.gestor = new GestorComponentes(vista, this);
         vista.personaje = new Personaje(vista, 10);
     }
@@ -98,7 +94,7 @@ public class Controlador {
                 this.vista.disparos.Add(tiro);
             }
             break;
-          
+
         }
 
     }
@@ -124,7 +120,7 @@ public class Controlador {
                 if (!vista.txtNombre.Text.Equals("")) {
                     String nombre = vista.txtNombre.Text;
                     int puntos = int.Parse(vista.lblPuntosGameOver.Text);
-                    jugadores.Add((nombre, puntos));
+                    partidas.Add(new Partida(nombre, puntos));
                     vista.txtNombre.Text = "";
 
                 }
@@ -159,7 +155,7 @@ public class Controlador {
     }
 
     public void menu() {
-        
+
         vista.KeyPreview = false;
         vista.panelMenu.Visible = true;
         vista.panelMenu.Enabled = true;
@@ -178,7 +174,7 @@ public class Controlador {
     }
 
     public void ranking() {
-        
+
         vista.KeyPreview = false;
         cargarListView();
         vista.panelRanking.Visible = true;
@@ -195,7 +191,7 @@ public class Controlador {
 
         vista.panelGameOver.Visible = false;
         vista.panelGameOver.Enabled = false;
-        
+
     }
 
 
@@ -235,11 +231,14 @@ public class Controlador {
 
     public void cargarListView() {
         vista.rankingPuntos.Items.Clear();
+        List<(string Nombre, int Puntuacion)> jugadores = new List<(string Nombre, int Puntuacion)>();
         int i = 1;
-
+        foreach(var clave in partidas) {
+            jugadores.Add((clave.Nombre,clave.Puntuacion));
+        }
         jugadores.Sort((x, y) => y.Puntuacion.CompareTo(x.Puntuacion));
         foreach ((string Nombre, int Puntuacion) jugador in jugadores) {
-            string[] row = {i.ToString(), jugador.Nombre, jugador.Puntuacion.ToString() };
+            string[] row = { i.ToString(), jugador.Nombre, jugador.Puntuacion.ToString() };
             vista.rankingPuntos.Items.Add(new ListViewItem(row));
             i++;
         }
@@ -249,6 +248,22 @@ public class Controlador {
     public SoundPlayer getTiro() {
         return tiro;
     }
+    
+    public void leerTXT() {
+        string ruta = @"..\\..\\Resources\\ranking.json";
+        string jsonString = File.ReadAllText(ruta);
 
+        // Deserializar el JSON en una lista de objetos Partida
+        partidas = JsonSerializer.Deserialize<List<Partida>>(jsonString);
+    }
+
+    public void crearJson() {
+        string jsonString = JsonSerializer.Serialize(partidas, new JsonSerializerOptions { WriteIndented = true });
+
+        // Guardar en un archivo
+        File.WriteAllText(@"..\\..\\Resources\\ranking.json", jsonString);
+
+        
+    }
 }
 

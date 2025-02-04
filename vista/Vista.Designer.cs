@@ -38,6 +38,10 @@ namespace SpaceInvaders.vista
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Vista));
             this.panelJuego = new System.Windows.Forms.Panel();
             this.panelMenu = new System.Windows.Forms.Panel();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnClasificacion = new System.Windows.Forms.Button();
             this.btnStart = new System.Windows.Forms.Button();
             this.panelVidasPunto = new System.Windows.Forms.Panel();
@@ -61,6 +65,10 @@ namespace SpaceInvaders.vista
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.fotoGameOver = new System.Windows.Forms.PictureBox();
             this.panelMenu.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelVidasPunto.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconoPersonaje)).BeginInit();
             this.panelRanking.SuspendLayout();
@@ -80,6 +88,10 @@ namespace SpaceInvaders.vista
             this.panelMenu.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.panelMenu.BackgroundImage = global::SpaceInvaders.Properties.Resources.fondo__1_3;
             this.panelMenu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.panelMenu.Controls.Add(this.pictureBox4);
+            this.panelMenu.Controls.Add(this.pictureBox3);
+            this.panelMenu.Controls.Add(this.pictureBox2);
+            this.panelMenu.Controls.Add(this.pictureBox1);
             this.panelMenu.Controls.Add(this.btnClasificacion);
             this.panelMenu.Controls.Add(this.btnStart);
             this.panelMenu.Location = new System.Drawing.Point(8, 8);
@@ -87,6 +99,40 @@ namespace SpaceInvaders.vista
             this.panelMenu.Size = new System.Drawing.Size(1126, 768);
             this.panelMenu.TabIndex = 1;
             this.panelMenu.Paint += new System.Windows.Forms.PaintEventHandler(this.panelMenu_Paint);
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BackgroundImage = global::SpaceInvaders.Properties.Resources.back;
+            this.pictureBox4.Image = global::SpaceInvaders.Properties.Resources.teclas1;
+            this.pictureBox4.Location = new System.Drawing.Point(745, 511);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(150, 150);
+            this.pictureBox4.TabIndex = 6;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Location = new System.Drawing.Point(8, 8);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox3.TabIndex = 5;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox2.TabIndex = 4;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
             // 
             // btnClasificacion
             // 
@@ -318,6 +364,10 @@ namespace SpaceInvaders.vista
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Space Invader";
             this.panelMenu.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panelVidasPunto.ResumeLayout(false);
             this.panelVidasPunto.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconoPersonaje)).EndInit();
@@ -362,6 +412,10 @@ namespace SpaceInvaders.vista
         public ColumnHeader columnHeader3;
         public ColumnHeader columnHeader1;
         private Label label1;
+        private PictureBox pictureBox1;
+        private PictureBox pictureBox4;
+        private PictureBox pictureBox3;
+        private PictureBox pictureBox2;
 
         //
 

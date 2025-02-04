@@ -23,6 +23,12 @@ namespace SpaceInvaders.vista
             InitializeComponent();
            
             controlador = new Controlador(this);
+            Application.ApplicationExit += new EventHandler(OnApplicationExit);
+        }
+
+        private void OnApplicationExit(object sender, EventArgs e) {
+           
+            controlador.crearJson();
         }
 
         private void panelMenu_Paint(object sender, PaintEventArgs e) {

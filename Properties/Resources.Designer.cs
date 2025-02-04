@@ -263,6 +263,16 @@ namespace SpaceInvaders.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap teclas1 {
+            get {
+                object obj = ResourceManager.GetObject("teclas1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap tiro {
             get {
                 object obj = ResourceManager.GetObject("tiro", resourceCulture);
